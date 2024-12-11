@@ -1,0 +1,25 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,  // Add this line to allow default imports
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "components/WithRole.js",
+    "components/ProductCard.jsx",
+    "app/(tabs)/[ProductsPage].jsx",
+    "app/search/[query].jsx",
+    "app/(tabs)/favourites.jsx",
+    "app/(tabs)/CategoriesPage.jsx",
+    "app/(tabs)/Cart.jsx"
+  ]
+}
